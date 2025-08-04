@@ -2151,7 +2151,7 @@ body {
   }
   .form__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 6.5625rem);
   }
 }
 @media (max-width: 61.9375rem){
@@ -2229,6 +2229,9 @@ body {
   }
   .process__imgs {
     align-items: start;
+  }
+  .form__item {
+    width: 100%;
   }
 }
 @media (max-width: 20em){
