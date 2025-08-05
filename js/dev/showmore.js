@@ -1,4 +1,4 @@
-import { g as getHash, d as dataMediaQueries, s as slideDown, a as setHash, b as slideUp, c as slideToggle } from "./app.min.js";
+import { a as getHash, d as dataMediaQueries, s as slideDown, c as setHash, e as slideUp, f as slideToggle } from "./app.min.js";
 function tabs() {
   const tabs2 = document.querySelectorAll("[data-fls-tabs]");
   let tabsActiveHash = [];
