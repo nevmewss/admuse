@@ -6,10 +6,11 @@
 		<link rel="preload" href="./assets/fonts/helvetica_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>About</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1754379301027"></script>
-		<script type="module" crossorigin="" src="./js/showmore.min.js?v=1754379301027"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754379301027">
-		<link rel="stylesheet" crossorigin="" href="./css/showmore.min.css?v=1754379301027">
+		<script type="module" crossorigin="" src="./js/service.min.js?v=1754380176163"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/showmore.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754380176163">
+		<link rel="stylesheet" crossorigin="" href="./css/showmore.min.css?v=1754380176163">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -235,13 +236,13 @@
 					<div class="nav__container">
 						<h2 class="nav__title title">Навігація по сторінці</h2>
 						<div class="nav__row">
-							<button type="button" class="nav__button">Портфоліо</button>
-							<button type="button" class="nav__button">Прайс</button>
-							<button type="button" class="nav__button">Відгуки</button>
-							<button type="button" class="nav__button">Етапи розробки</button>
-							<button type="button" class="nav__button">Контактна форма</button>
-							<button type="button" class="nav__button">Ніші клієнти</button>
-							<button type="button" class="nav__button">Блог</button>
+							<button type="button" data-fls-scrollto=".examples" class="nav__button">Портфоліо</button>
+							<button type="button" data-fls-scrollto=".order" class="nav__button">Прайс</button>
+							<button type="button" data-fls-scrollto=".reviews-small" class="nav__button">Відгуки</button>
+							<button type="button" data-fls-scrollto=".steps" class="nav__button">Етапи розробки</button>
+							<button type="button" data-fls-scrollto=".form" class="nav__button">Контактна форма</button>
+							<button type="button" data-fls-scrollto=".trust" class="nav__button">Наші клієнти</button>
+							<button type="button" data-fls-scrollto=".blog" class="nav__button">Блог</button>
 						</div>
 					</div>
 				</section>
