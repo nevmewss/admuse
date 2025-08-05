@@ -2360,6 +2360,63 @@ body {
   text-align: left;
   margin-bottom: 2.125rem;
 }
+.contacts__row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+.contacts__item {
+  max-width: 17.875rem;
+}
+.contacts__ico {
+  margin-bottom: 0.75rem;
+}
+.contacts__label {
+  color: #424858;
+  margin-bottom: 0.75rem;
+  font-size: 1.375rem;
+}
+.contacts__text {
+  color: rgba(0, 0, 0, 0.631372549);
+  line-height: 1.3;
+}
+.contacts__text a {
+  display: block;
+}
+.contacts__labling {
+  font-size: 1.375rem;
+  color: #424858;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.contacts__msgs {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.contacts__msg {
+  transition: all 0.3s;
+}
+.social__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.social__item {
+  position: relative;
+}
+.social__img img {
+  border-radius: 2.0625rem;
+}
+.social__link {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transition: all 0.3s;
+}
+.banner-contacts img {
+  border-radius: 2.0625rem;
+}
 @media (max-width: 93.75em){
   .header__mark {
     display: none;
@@ -2428,6 +2485,10 @@ body {
   }
   .examples__slider {
     display: none;
+  }
+  .contacts__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 62.5em){
@@ -2787,6 +2848,9 @@ body {
   .sidebar-article {
     display: none;
   }
+  .social__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 61.9375rem){
   .decissions__navigation {
@@ -2865,6 +2929,12 @@ body {
   .end-article__container {
     flex-direction: column;
   }
+  .social__row {
+    grid-template-columns: 1fr;
+  }
+  .social__img img {
+    width: 100%;
+  }
 }
 @media (max-width: 34.375em){
   .portfolio__column {
@@ -2903,6 +2973,9 @@ body {
   .end-article__share {
     flex-direction: column;
     align-items: start;
+  }
+  .contacts__row {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 20em){
@@ -3212,6 +3285,24 @@ body {
   .end-article__text {
     font-size: 1rem;
   }
+  .page__contacts {
+    margin-bottom: 2.25rem;
+  }
+  .contacts {
+    margin-top: 6.25e-8rem;
+  }
+  .contacts__title {
+    margin-bottom: 1.6875rem;
+  }
+  .contacts__text {
+    font-size: 1rem;
+  }
+  .page__social {
+    margin-bottom: 3.3125rem;
+  }
+  .banner-contacts img {
+    margin-bottom: 7.125rem;
+  }
 }
 @media (min-width: 20em) and (max-width: 104.6875em){
   .title {
@@ -3519,6 +3610,24 @@ body {
   }
   .end-article__text {
     font-size: clamp( 1rem , 0.94095940959375rem  +  0.295202952vw , 1.25rem );
+  }
+  .page__contacts {
+    margin-bottom: clamp( 2.25rem , 1.55627306273125rem  +  3.4686346863vw , 5.1875rem );
+  }
+  .contacts {
+    margin-top: clamp( 6.25e-8rem , -0.66420656480625rem  +  3.3210331365vw , 2.8125rem );
+  }
+  .contacts__title {
+    margin-bottom: clamp( 1.6875rem , 0.964252767525rem  +  3.6162361624vw , 4.75rem );
+  }
+  .contacts__text {
+    font-size: clamp( 1rem , 0.91143911439375rem  +  0.442804428vw , 1.375rem );
+  }
+  .page__social {
+    margin-bottom: clamp( 3.3125rem , 2.73685424354375rem  +  2.8782287823vw , 5.75rem );
+  }
+  .banner-contacts img {
+    margin-bottom: clamp( 6.1875rem , 7.346402214025rem  +  -1.1070110701vw , 7.125rem );
   }
 }
 @media (min-width: 47.99875em){
@@ -4013,6 +4122,24 @@ body {
   .end-article__text {
     font-size: 1.25rem;
   }
+  .page__contacts {
+    margin-bottom: 5.1875rem;
+  }
+  .contacts {
+    margin-top: 2.8125rem;
+  }
+  .contacts__title {
+    margin-bottom: 4.75rem;
+  }
+  .contacts__text {
+    font-size: 1.375rem;
+  }
+  .page__social {
+    margin-bottom: 5.75rem;
+  }
+  .banner-contacts img {
+    margin-bottom: 6.1875rem;
+  }
 }
 @media (any-hover: hover){
   .btn-primary:hover {
@@ -4120,6 +4247,15 @@ body {
     color: #fff;
   }
   .end-article__link:hover {
+    transform: scale(1.1);
+  }
+  .contacts__text a:hover {
+    text-decoration: underline;
+  }
+  .contacts__msg:hover {
+    transform: scale(1.1);
+  }
+  .social__link:hover {
     transform: scale(1.1);
   }
 }
