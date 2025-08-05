@@ -5,11 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preload" href="./assets/fonts/helvetica_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
-		<title>Blog</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1754387362956"></script>
-		<script type="module" crossorigin="" src="./js/slider.min.js?v=1754387362956"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754387362956">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1754387362956">
+		<title>Article</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1754387362955"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754387362955">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -139,36 +137,195 @@
 					<div class="page-nav__container">
 						<div class="page-nav__pages">
 							<a href="index.html" class="page-nav__back">Головна /</a>
-							<div class="page-nav__current">Про нас</div>
+							<div class="page-nav__current">Стаття</div>
 						</div>
-						<form action="#" class="page-nav__search">
-							<input type="text" placeholder="Пошук" class="page-nav__input" name="search" id="search" required>
-							<button data-fls-button="" type="submit" class="page-nav__submit">
-								<img src="./assets/img/blog_page/search/search.svg" alt="Image">
-							</button>
-						</form>
 					</div>
 				</div>
+				<section class="page__hero-article article-hero">
+					<div class="article-hero__container">
+						<div class="article-hero__img">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/article/hero/article-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/article/hero/article-1200.webp" type="image/webp">
+								<img alt="Image" src="./assets/img/article/hero/article.webp">
+							</picture>
+						</div>
+						<div class="article-hero__info">
+							<div class="article-hero__content">
+								<h2 class="article-hero__title title">Заголовок статті Заголовок статті</h2>
+								<div class="article-hero__article">
+									<div class="article-hero__item">
+										<h3 class="article-hero__label">Заголовок</h3>
+										<div class="article-hero__text">
+											<p>
+												Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                    laboriosam, nisi ut al Quis autem vel eum iure reprehenderit qui in ea voluptate
+                                    velit esse quam nihil molestiae consequatu Quis autem vel eum iure reprehenderit qui
+                                    in ea voluptate velit esse quam nihil
+											</p>
+											<p>
+												Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                    laboriosam, nisi ut al Quis autem vel eum iure reprehenderit qui in ea voluptate
+                                    velit esse quam nihil molestiae consequatu Quis autem vel eum iure reprehenderit qui
+                                    in ea voluptate velit esse quam nihil molestiae consequatu
+											</p>
+										</div>
+									</div>
+									<div class="article-hero__item">
+										<h3 class="article-hero__label">Заголовок</h3>
+										<ol class="article-hero__list">
+											<li>
+												Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                    laboriosam,
+											</li>
+											<li>
+												nisi ut al Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                                    nihil
+											</li>
+											<li>
+												molestiae consequatu Quis autem vel eum iure reprehenderit qui in eanisi ut al Quis
+                                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil voluptate
+                                    velit esse
+											</li>
+											<li>
+												Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                    laboriosam,
+											</li>
+											<li>
+												nisi ut al Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                                    nihil
+											</li>
+										</ol>
+									</div>
+									<div class="article-hero__item">
+										<h3 class="article-hero__label">Заголовок</h3>
+										<div class="article-hero__text">
+											<p>
+												Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                    laboriosam, nisi ut al Quis autem vel eum iure reprehenderit qui in ea voluptate
+                                    velit esse quam nihil molestiae consequatu Quis autem vel eum iure reprehenderit qui
+                                    in ea voluptate velit esse quam nihil
+											</p>
+											<p>
+												Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                    laboriosam, nisi ut al Quis autem vel eum iure reprehenderit qui in ea voluptate
+                                    velit esse quam nihil molestiae consequatu Quis autem vel eum iure reprehenderit qui
+                                    in ea voluptate velit esse quam nihil molestiae consequatu
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<aside class="article-hero__sidebar sidebar-article">
+								<div class="sidebar-article__item">
+									<h3 class="sidebar-article__title">Популярні статті:</h3>
+									<div class="sidebar-article__list">
+										<a href="#" class="sidebar-article__link">Назва статті</a>
+										<a href="#" class="sidebar-article__link">Назва статті</a>
+										<a href="#" class="sidebar-article__link">Назва статті</a>
+										<a href="#" class="sidebar-article__link">Назва статті</a>
+									</div>
+								</div>
+								<div class="sidebar-article__item">
+									<h3 class="sidebar-article__title">Категорія</h3>
+									<div class="sidebar-article__categories">
+										<a href="#" class="sidebar-article__category">Категорія</a>
+										<a href="#" class="sidebar-article__category">Категорія</a>
+										<a href="#" class="sidebar-article__category">Категорія</a>
+										<a href="#" class="sidebar-article__category">Категорія</a>
+										<a href="#" class="sidebar-article__category">Категорія</a>
+										<a href="#" class="sidebar-article__category">Категорія</a>
+										<a href="#" class="sidebar-article__category">Довга Категорія</a>
+										<a href="#" class="sidebar-article__category">Категорія</a>
+										<a href="#" class="sidebar-article__category">Категорія</a>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</section>
+				<section class="page__article-end end-article">
+					<div class="end-article__container">
+						<div class="end-article__img">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/article/end/end-600.webp" type="image/webp">
+								<img alt="Image" src="./assets/img/article/end/end.webp">
+							</picture>
+						</div>
+						<div class="end-article__content">
+							<div class="end-article__quote">
+								<img src="./assets/img/icons/quote.svg" alt="&quot;&quot;">
+							</div>
+							<div class="end-article__text">
+								Lorem ipsum dolor sit amet, ссылка adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. . Duis vulputate
+                    commodo le Lorem ipsum dolor sit amet, ссылка adipiscing elit. Nulla quam velit, vulputate eu
+                    pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. . Duis
+                    vulputate commodo le
+							</div>
+							<div class="end-article__share">
+								<h2 class="end-article__title title">Поділитися</h2>
+								<div class="end-article__social">
+									<a href="#" class="end-article__link">
+										<img src="./assets/img/social/tw.svg" alt="Twitter">
+									</a>
+									<a href="#" class="end-article__link">
+										<img src="./assets/img/social/in.svg" alt="Instagram">
+									</a>
+									<a href="#" class="end-article__link">
+										<img src="./assets/img/social/fb.svg" alt="Facebook">
+									</a>
+									<a href="#" class="end-article__link">
+										<img src="./assets/img/social/li.svg" alt="Linked In">
+									</a>
+									<a href="#" class="end-article__link">
+										<img src="./assets/img/social/yt.svg" alt="Youtube">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="banner">
+					<div class="banner__container">
+						<div class="banner__img">
+							<picture>
+								<img alt="Олег Рак" src="./assets/img/homepage/banner/oleh.webp">
+							</picture>
+						</div>
+						<div class="banner__content">
+							<h2 class="banner__title">
+								У прайсі є повна вартість на всі наші послуги щоб отримати прайс введіть ваш телефон у Telegram /
+                    Viber та пошту.
+							</h2>
+							<form action="#" method="post" class="banner__form form-banner">
+								<div class="form-banner__top">
+									<div class="form-banner__inputs">
+										<label class="form-banner__label">
+											<span>Введіть номер телефону</span>
+											<input type="tel" name="tel" required placeholder="+380(__) ___-__-__" class="form-banner__input">
+										</label>
+										<label class="form-banner__label">
+											<span>Введіть E-mail</span>
+											<input type="email" required name="email" placeholder="E-mail" class="form-banner__input">
+										</label>
+									</div>
+									<button data-fls-button="" type="submit" class="form-banner__button">Отримати прайс зараз</button>
+								</div>
+								<label class="form-banner__radio">
+									<div>
+										<input required type="radio" name="agree" class="form-banner__agree">
+										Натискаючи кнопку, ви погоджуєтесь з умовами
+										<a href="#">Політики Конфіденційності</a>
+									</div>
+								</label>
+							</form>
+						</div>
+					</div>
+				</section>
 				<section class="page__blog blog">
 					<div class="blog__container">
-						<h2 class="blog__title title title_blog-page">Блог</h2>
-						<div class="blog__nav">
-							<div class="blog__buttons">
-								<button type="button" class="blog__btn">SEO Просування</button>
-								<button type="button" class="blog__btn">Реклама</button>
-								<button type="button" class="blog__btn">Дизайн</button>
-								<button type="button" class="blog__btn">Аналітика</button>
-								<button type="button" class="blog__btn">Розробка</button>
-							</div>
-							<label class="blog__label">
-								Сортування:
-								<select name="sort" class="blog__select">
-									<option value="popular">Популярні</option>
-									<option value="popular">Нові</option>
-									<option value="popular">Старі</option>
-								</select>
-							</label>
-						</div>
+						<h2 class="blog__title title title_blog-article">Вам може бути цікаво</h2>
 						<div class="blog__row">
 							<div class="blog__column">
 								<div class="blog__item item-blog">
@@ -215,103 +372,6 @@
 									<a href="#" class="item-blog__btn">Читати статтю</a>
 								</div>
 							</div>
-							<div class="blog__column">
-								<div class="blog__item item-blog">
-									<div class="item-blog__img">
-										<picture>
-											<img alt="Image" src="./assets/img/blog/04.webp">
-										</picture>
-									</div>
-									<h3 class="item-blog__title">Виготовлення та встановлення сходів</h3>
-									<div class="item-blog__text">Компанія з виробництва сходів та їх встановлення</div>
-									<a href="#" class="item-blog__btn">Читати статтю</a>
-								</div>
-							</div>
-							<div class="blog__column">
-								<div class="blog__item item-blog">
-									<div class="item-blog__img">
-										<picture>
-											<img alt="Image" src="./assets/img/blog/05.webp">
-										</picture>
-									</div>
-									<h3 class="item-blog__title">Медичний центр «Новодерм»</h3>
-									<div class="item-blog__text">
-										До знайомства з нашим агентством кампанія велася іншим київським підрядником. Налаштовано
-                            було все непогано, але ....
-									</div>
-									<a href="#" class="item-blog__btn">Читати статтю</a>
-								</div>
-							</div>
-							<div class="blog__column">
-								<div class="blog__item item-blog">
-									<div class="item-blog__img">
-										<picture>
-											<img alt="Image" src="./assets/img/blog/06.webp">
-										</picture>
-									</div>
-									<h3 class="item-blog__title">Лазертаг Арена BLASTER</h3>
-									<div class="item-blog__text">
-										До нас клієнт звернувся із контекстної реклами. Розуміючи суть нашої моделі роботи, він
-                            вирішив, що хоче співпрацювати саме з нами. До цього рекламна кампанія цілком і повністю
-                            велася ним але …
-									</div>
-									<a href="#" class="item-blog__btn">Читати статтю</a>
-								</div>
-							</div>
-							<div class="blog__column">
-								<div class="blog__item item-blog">
-									<div class="item-blog__img">
-										<picture>
-											<img alt="Image" src="./assets/img/blog/07.webp">
-										</picture>
-									</div>
-									<h3 class="item-blog__title">Приватний кабінет УЗД Галини Дубець</h3>
-									<div class="item-blog__text">
-										Рекламу в Google ніколи раніше не запускали, працювали по-старому: сарафанка, якісь
-                            безкоштовні та платні дошки оголошень і, в принципі, їх локація в самому центрі Львова
-                            давала результат найбільше.
-									</div>
-									<a href="#" class="item-blog__btn">Читати статтю</a>
-								</div>
-							</div>
-							<div class="blog__column">
-								<div class="blog__item item-blog">
-									<div class="item-blog__img">
-										<picture>
-											<img alt="Image" src="./assets/img/blog/08.webp">
-										</picture>
-									</div>
-									<h3 class="item-blog__title">Biotech - автономні каналізації</h3>
-									<div class="item-blog__text">
-										Клієнт вже давно займається автономними каналізаціями майже по всій Україні. Величезний
-                            досвід і хороша рекламна кампанія давала свої плоди, але ...
-									</div>
-									<a href="#" class="item-blog__btn">Читати статтю</a>
-								</div>
-							</div>
-							<div class="blog__column">
-								<div class="blog__item item-blog">
-									<div class="item-blog__img">
-										<picture>
-											<img alt="Image" src="./assets/img/blog/09.webp">
-										</picture>
-									</div>
-									<h3 class="item-blog__title">Кондиціонери - Wind</h3>
-									<div class="item-blog__text">
-										Раніше клієнт працював з іншим підрядником і був незадоволений тим, що витрачав велику
-                            кількість коштів та не отримував потрібної віддачі.
-									</div>
-									<a href="#" class="item-blog__btn">Читати статтю</a>
-								</div>
-							</div>
-						</div>
-						<div class="blog__pagination">
-							<button type="button" class="blog__pag">1</button>
-							<button type="button" class="blog__pag">2</button>
-							<button type="button" class="blog__pag">3</button>
-							<button type="button" class="blog__pag">4</button>
-							<button type="button" class="blog__pag">5</button>
-							<button type="button" class="blog__pag">6</button>
 						</div>
 					</div>
 				</section>
@@ -366,50 +426,6 @@
 								<source media="(max-width: 600px)" srcset="./assets/img/form/card-600.webp" type="image/webp">
 								<img alt="Image" src="./assets/img/form/card.webp">
 							</picture>
-						</div>
-					</div>
-				</section>
-				<section class="page__answers answers">
-					<div class="answers__container">
-						<h2 class="answers__title title">Відповідаємо на питання:</h2>
-						<div data-fls-slider="" class="answers__slider swiper">
-							<div class="answers__wrapper swiper-wrapper">
-								<div class="answers__slide swiper-slide">
-									<div class="answers__item">
-										<div class="answers__tag">Тег проекта</div>
-										<div class="answers__video">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/aGRDAlWFfvU?si=hH6b-MzMdD_1uq5X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-										</div>
-										<div class="answers__info">Імʼя Призвіще \ Назава компнії.</div>
-									</div>
-								</div>
-								<div class="answers__slide swiper-slide">
-									<div class="answers__item">
-										<div class="answers__tag">Тег проекта</div>
-										<div class="answers__video">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/aGRDAlWFfvU?si=hH6b-MzMdD_1uq5X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-										</div>
-										<div class="answers__info">Імʼя Призвіще \ Назава компнії.</div>
-									</div>
-								</div>
-								<div class="answers__slide swiper-slide">
-									<div class="answers__item">
-										<div class="answers__tag">Тег проекта</div>
-										<div class="answers__video">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/aGRDAlWFfvU?si=hH6b-MzMdD_1uq5X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-										</div>
-										<div class="answers__info">Імʼя Призвіще \ Назава компнії.</div>
-									</div>
-								</div>
-							</div>
-							<div class="answers__nav">
-								<button type="button" class="answers-swiper-button-prev">
-									<img src="./assets/img/icons/arrow.svg" alt="Назад">
-								</button>
-								<button type="button" class="answers-swiper-button-next">
-									<img src="./assets/img/icons/arrow.svg" alt="Вперед">
-								</button>
-							</div>
 						</div>
 					</div>
 				</section>
