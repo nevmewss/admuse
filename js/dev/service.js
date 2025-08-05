@@ -1,5 +1,6 @@
 import { b as bodyUnlock, g as gotoBlock, a as getHash } from "./app.min.js";
 import "./showmore.min.js";
+import "./slider.min.js";
 function pageNavigation() {
   document.addEventListener("click", pageNavigationAction);
   document.addEventListener("watcherCallback", pageNavigationAction);
