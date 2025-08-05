@@ -4752,6 +4752,69 @@ function initSliders() {
       on: {}
     });
   }
+  if (document.querySelector(".answers__slider ")) {
+    new Swiper(".answers__slider", {
+      // <- Вказуємо склас потрібного слайдера
+      // Підключаємо модулі слайдера
+      // для конкретного випадку
+      modules: [Navigation],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 3,
+      spaceBetween: 100,
+      //autoHeight: true,
+      speed: 800,
+      //touchRatio: 0,
+      //simulateTouch: false,
+      //loop: true,
+      //preloadImages: false,
+      //lazy: true,
+      /*
+      // Ефекти
+      effect: 'fade',
+      autoplay: {
+      	delay: 3000,
+      	disableOnInteraction: false,
+      },
+      */
+      // Пагінація
+      /*
+      pagination: {
+      	el: '.swiper-pagination',
+      	clickable: true,
+      },
+      */
+      // Скроллбар
+      /*
+      scrollbar: {
+      	el: '.swiper-scrollbar',
+      	draggable: true,
+      },
+      */
+      // Кнопки "вліво/вправо"
+      navigation: {
+        prevEl: ".answers-swiper-button-prev",
+        nextEl: ".answers-swiper-button-next"
+      },
+      // Брейкпоінти
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1268: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      },
+      // Події
+      on: {}
+    });
+  }
 }
 document.querySelector("[data-fls-slider]") ? window.addEventListener("load", initSliders) : null;
 function menuInit() {
@@ -4957,6 +5020,45 @@ document.addEventListener("DOMContentLoaded", () => {
       input.setSelectionRange(pos, pos);
     });
   }
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".blog__column");
+  const paginationWrapper = document.querySelector(".blog__pagination");
+  const itemsPerPage = 9;
+  let currentPage = 1;
+  const totalPages = Math.ceil(items.length / itemsPerPage);
+  function createPagination() {
+    paginationWrapper.innerHTML = "";
+    for (let i = 1; i <= totalPages; i++) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.classList.add("blog__pag");
+      button.textContent = i;
+      if (i === currentPage) button.classList.add("active");
+      button.addEventListener("click", () => {
+        showPage(i);
+      });
+      paginationWrapper.appendChild(button);
+    }
+  }
+  function showPage(page) {
+    currentPage = page;
+    items.forEach((item) => item.style.display = "none");
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    for (let i = start; i < end && i < items.length; i++) {
+      items[i].style.display = "block";
+    }
+    createPagination();
+    history.pushState(null, "", `?page=${page}`);
+  }
+  const urlParams = new URLSearchParams(window.location.search);
+  const pageParam = parseInt(urlParams.get("page"));
+  if (pageParam && pageParam > 0 && pageParam <= totalPages) {
+    currentPage = pageParam;
+  }
+  createPagination();
+  showPage(currentPage);
 });
 export {
   getHash as a,
