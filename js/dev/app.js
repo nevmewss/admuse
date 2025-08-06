@@ -541,5 +541,7 @@ export {
   slideDown as e,
   setHash as f,
   gotoBlock as g,
+  bodyLock as h,
+  bodyLockStatus as i,
   slideToggle as s
 };

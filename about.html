@@ -6,10 +6,12 @@
 		<link rel="preload" href="./assets/fonts/helvetica_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>About</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1754471046178"></script>
-		<script type="module" crossorigin="" src="./js/slider.min.js?v=1754471046178"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754471046178">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1754471046178">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1754502345901"></script>
+		<script type="module" crossorigin="" src="./js/slider.min.js?v=1754502345901"></script>
+		<script type="module" crossorigin="" src="./js/popup.min.js?v=1754502345901"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754502345901">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1754502345901">
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1754502345901">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -68,7 +70,7 @@
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu__item">
-										<a href="#" class="menu__link">Портфоліо</a>
+										<a href="portfolio.html" class="menu__link">Портфоліо</a>
 									</li>
 									<li class="menu__item">
 										<a href="service.html" class="menu__link">Послуги</a>
@@ -154,7 +156,7 @@
                         incididunt ut labore
 								</p>
 							</div>
-							<a href="#" class="sample-hero__button btn-page">Обговорити проект</a>
+							<button type="button" data-fls-popup-link="discuss" class="sample-hero__button btn-page">Обговорити проект</button>
 						</div>
 						<div class="sample-hero__img">
 							<picture>
@@ -564,6 +566,74 @@
 					</div>
 				</section>
 			</main>
+			<div data-fls-popup="discuss" aria-hidden="true" class="popup">
+				<div data-fls-popup-wrapper="" class="popup__wrapper">
+					<div data-fls-popup-body="" class="popup__body">
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+							</svg>
+						</button>
+						<div data-fls-popup-content="" class="popup__text">
+							<section class="page__form form form-pop">
+								<div class="form__container">
+									<div class="form__img-oleh">
+										<picture>
+											<img alt="Image" src="./assets/img/form/oleh.webp">
+										</picture>
+									</div>
+									<form action="#" class="form__form">
+										<h2 class="form__title title">Залишіть заявку та отримайте персональне КП з цінами та кейсами протягом дня</h2>
+										<div class="form__caption">Чим ви займаєтесь (можна посилання на сайт)</div>
+										<label class="form__item">
+											<input required type="tel" name="tel" class="form__input" placeholder="Введіть номер телефону">
+										</label>
+										<label class="form__item">
+											<input required type="text" name="url" class="form__input" placeholder="Введіть адрес вашого сайту">
+										</label>
+										<label class="form__item">
+											<input required type="email" name="mail" class="form__input" placeholder="E-mail">
+										</label>
+										<div class="form__options">
+											<div class="form__label">Оберіть мессенджр, куди надіслати вам каталог:</div>
+											<div class="form__list">
+												<label class="form__radio">
+													<input checked type="radio" name="messanger" value="WhatsApp">
+													<span>WhatsApp</span>
+												</label>
+												<label class="form__radio">
+													<input type="radio" name="messanger" value="Viber">
+													<span>Viber</span>
+												</label>
+												<label class="form__radio">
+													<input type="radio" name="messanger" value="Telegram">
+													<span>Telegram</span>
+												</label>
+												<label class="form__radio">
+													<input type="radio" name="messanger" value="Ha E-mail">
+													<span>Ha E-mail</span>
+												</label>
+											</div>
+										</div>
+										<button data-fls-button="" type="submit" class="form__button">Отримати персональне КП</button>
+										<label class="form__agree">
+											<input required type="radio" name="agree" value="згоден">
+											<span>Натискаючи кнопку, ви погоджуєтесь з умовами Політики Конфіденційності</span>
+										</label>
+									</form>
+									<div class="form__img-card">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/form/card-600.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/form/card.webp">
+										</picture>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
 					<div class="footer__top">
@@ -579,12 +649,12 @@
 							<div class="footer__row">
 								<div class="footer__caption">меню</div>
 								<li class="footer__list">
-									<a class="footer__link" href="#">Про нас</a>
-									<a class="footer__link" href="#">Послуги</a>
-									<a class="footer__link" href="#">Портфоліо</a>
-									<a class="footer__link" href="#">Відгуки</a>
-									<a class="footer__link" href="#">Блог</a>
-									<a class="footer__link" href="#">Контакти</a>
+									<a class="footer__link" href="about.html">Про нас</a>
+									<a class="footer__link" href="service.html">Послуги</a>
+									<a class="footer__link" href="portfolio.html">Портфоліо</a>
+									<a class="footer__link" href="reviews.html">Відгуки</a>
+									<a class="footer__link" href="blog.html">Блог</a>
+									<a class="footer__link" href="contacts.html">Контакти</a>
 								</li>
 							</div>
 							<div class="footer__row">
@@ -639,6 +709,9 @@
 			</li>
 			<li>
 				<a href="contacts.html">contacts</a>
+			</li>
+			<li>
+				<a href="case.html">case</a>
 			</li>
 			<li>
 				<a href="blog.html">blog</a>
