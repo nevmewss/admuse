@@ -447,13 +447,60 @@ document.addEventListener("DOMContentLoaded", () => {
   createPagination();
   showPage(currentPage);
 });
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll("iframe").forEach((iframe) => {
+    if (!iframe.hasAttribute("loading")) {
+      iframe.setAttribute("loading", "lazy");
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  function initPagination(containerSelector, itemSelector, paginationSelector, itemsPerPage) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
+    const items = container.querySelectorAll(itemSelector);
+    const paginationWrapper = container.querySelector(paginationSelector);
+    if (!items.length || !paginationWrapper) return;
+    const totalPages = Math.ceil(items.length / itemsPerPage);
+    let currentPage = 1;
+    function createPagination() {
+      paginationWrapper.innerHTML = "";
+      for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement("a");
+        btn.href = "#";
+        btn.classList.add("reviews__pag");
+        btn.textContent = i;
+        if (i === currentPage) btn.classList.add("active");
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          showPage(i);
+        });
+        paginationWrapper.appendChild(btn);
+      }
+    }
+    function showPage(page) {
+      currentPage = page;
+      items.forEach((item) => item.style.display = "none");
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      for (let i = start; i < end && i < items.length; i++) {
+        items[i].style.display = "block";
+      }
+      createPagination();
+    }
+    createPagination();
+    showPage(currentPage);
+  }
+  initPagination(".reviews__body:nth-of-type(1)", ".reviews__review", ".reviews__pagination", 9);
+  initPagination(".reviews__body:nth-of-type(2)", ".reviews-small__item", ".reviews__pagination", 9);
+});
 export {
   getHash as a,
   bodyUnlock as b,
-  setHash as c,
+  slideUp as c,
   dataMediaQueries as d,
-  slideUp as e,
-  slideToggle as f,
+  slideDown as e,
+  setHash as f,
   gotoBlock as g,
-  slideDown as s
+  slideToggle as s
 };
