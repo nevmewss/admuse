@@ -1024,6 +1024,17 @@ body {
   padding: 1.25rem;
   align-items: start;
 }
+.portfolio__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375rem;
+}
+.portfolio__pag {
+  color: #7e6fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
 .item-portfolio__img {
   position: relative;
   margin-bottom: 1.25rem;
