@@ -6,16 +6,15 @@
 		<link rel="preload" href="./assets/fonts/helvetica_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1754502345894"></script>
-		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1754502345894"></script>
-		<script type="module" crossorigin="" src="./js/showmore.min.js?v=1754502345894"></script>
-		<script type="module" crossorigin="" src="./js/slider.min.js?v=1754502345894"></script>
-		<script type="module" crossorigin="" src="./js/popup.min.js?v=1754502345894"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1754502345894">
-		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1754502345894">
-		<link rel="stylesheet" crossorigin="" href="./css/showmore.min.css?v=1754502345894">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1754502345894">
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1754502345894">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1755679680081"></script>
+		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1755679680081"></script>
+		<script type="module" crossorigin="" src="./js/showmore.min.js?v=1755679680081"></script>
+		<script type="module" crossorigin="" src="./js/slider.min.js?v=1755679680081"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1755679680081">
+		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1755679680081">
+		<link rel="stylesheet" crossorigin="" href="./css/showmore.min.css?v=1755679680081">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1755679680081">
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1755679680081">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -57,12 +56,12 @@
 				</div>
 				<div class="header__container">
 					<div class="header__bottom">
-						<a href="#" class="header__logo">
+						<a href="index.html" class="header__logo">
 							<picture>
 								<img alt="AdMuse" src="./assets/img/logo.webp">
 							</picture>
 						</a>
-						<a href="#" class="header__logo-mob">
+						<a href="index.html" class="header__logo-mob">
 							<img src="./assets/img/logo-mob.svg" alt="AdMuse">
 						</a>
 						<div class="header__menu menu">
@@ -80,13 +79,13 @@
 										<a href="service.html" class="menu__link">Послуги</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Гарантії</a>
+										<a href="index.html#info" class="menu__link">Гарантії</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Koманда</a>
+										<a href="index.html#team" class="menu__link">Koманда</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Етапи роботи</a>
+										<a href="index.html#steps" class="menu__link">Етапи роботи</a>
 									</li>
 									<li class="menu__item">
 										<a href="reviews.html" class="menu__link">Відгуки</a>
@@ -136,7 +135,7 @@
 </each>
 </fetch>
 -->
-						<a href="#" class="header__button btn-primary">Обговорити проект</a>
+						<a href="#" data-fls-popup-link="discuss" class="header__button btn-primary">Обговорити проект</a>
 					</div>
 				</div>
 			</header>
@@ -408,9 +407,7 @@
 								<div class="info-calc__get">
 									<div class="info-calc__item">
 										<div class="info-calc__icon">
-											<picture>
-												<img alt="Price" src="./assets/img/homepage/calc/price.webp">
-											</picture>
+											<img src="./assets/img/homepage/calc/price.svg" alt="Price">
 										</div>
 										<div class="info-calc__labling">
 											<h3 class="info-calc__heading">Прайс на всі наші послуги</h3>
@@ -419,9 +416,7 @@
 									</div>
 									<div class="info-calc__item">
 										<div class="info-calc__icon">
-											<picture>
-												<img alt="PDF" src="./assets/img/homepage/calc/pdf.webp">
-											</picture>
+											<img src="./assets/img/homepage/calc/pdf.svg" alt="PDF">
 										</div>
 										<div class="info-calc__labling">
 											<h3 class="info-calc__heading">PDF-презентацію:</h3>
@@ -431,9 +426,7 @@
 									</div>
 									<div class="info-calc__item">
 										<div class="info-calc__icon">
-											<picture>
-												<img alt="Price" src="./assets/img/homepage/calc/consul.webp">
-											</picture>
+											<img src="./assets/img/homepage/calc/consul.svg" alt="Price">
 										</div>
 										<div class="info-calc__labling">
 											<h3 class="info-calc__heading">Мою особисту консультацію керівника - Олега Рака</h3>
@@ -1122,7 +1115,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="page__info info">
+				<section id="info" class="page__info info">
 					<div class="info__container">
 						<h2 class="info__title title">
 							Ви отримаєте персональне
@@ -1171,7 +1164,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="page__team team">
+				<section id="team" class="page__team team">
 					<div class="team__container">
 						<h2 class="team__title title">Наша команда</h2>
 						<div data-fls-slider="" class="team__slider swiper">
@@ -1363,7 +1356,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="page__steps">
+				<section id="steps" class="page__steps">
 					<div class="steps__container">
 						<h2 class="steps__labling title">
 							<span>6 ключових етапів</span>
@@ -1758,17 +1751,13 @@
 						<div class="true__row">
 							<div class="true__item">
 								<div class="true__icon">
-									<picture>
-										<img alt="Image" src="./assets/img/homepage/true/01.webp">
-									</picture>
+									<img src="./assets/img/homepage/true/01.svg" alt="Image">
 								</div>
 								<div class="true__text">Ми не зробимо вам "г@вно-рекламу" за 500 грн - налаштовуємо професійно</div>
 							</div>
 							<div class="true__item">
 								<div class="true__icon">
-									<picture>
-										<img alt="Image" src="./assets/img/homepage/true/02.webp">
-									</picture>
+									<img src="./assets/img/homepage/true/02.svg" alt="Image">
 								</div>
 								<div class="true__text">
 									Ми не продаватимемо за заявками замість Вас. Ми вибудовуємо систему, а передзвонювати за
@@ -1777,17 +1766,13 @@
 							</div>
 							<div class="true__item">
 								<div class="true__icon">
-									<picture>
-										<img alt="Image" src="./assets/img/homepage/true/03.webp">
-									</picture>
+									<img src="./assets/img/homepage/true/03.svg" alt="Image">
 								</div>
 								<div class="true__text">Ми не копіюємо чужу рекламу. Ми створюємо унікальну і авторську під вас.</div>
 							</div>
 							<div class="true__item">
 								<div class="true__icon">
-									<picture>
-										<img alt="Image" src="./assets/img/homepage/true/04.webp">
-									</picture>
+									<img src="./assets/img/homepage/true/04.svg" alt="Image">
 								</div>
 								<div class="true__text">
 									Якщо вам важлива ціна, а не результат, вам краще залишити сайт і знайти фрілансера
@@ -1795,17 +1780,13 @@
 							</div>
 							<div class="true__item">
 								<div class="true__icon">
-									<picture>
-										<img alt="Image" src="./assets/img/homepage/true/05.webp">
-									</picture>
+									<img src="./assets/img/homepage/true/05.svg" alt="Image">
 								</div>
 								<div class="true__text">Ми пропонуємо послугу яка приносить вам гроші</div>
 							</div>
 							<div class="true__item">
 								<div class="true__icon">
-									<picture>
-										<img alt="Image" src="./assets/img/homepage/true/06.webp">
-									</picture>
+									<img src="./assets/img/homepage/true/06.svg" alt="Image">
 								</div>
 								<div class="true__text">Нам немає потреби завищувати рахунок за для безкорисних рейтингів</div>
 							</div>
